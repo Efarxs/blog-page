@@ -1,0 +1,57 @@
+/* efarblog 自建功能样式：评论、灯箱、富文本兼容 */
+
+/* ---------- 阅读计数 ---------- */
+.leancloud-visitors-count { font-variant-numeric: tabular-nums; }
+
+/* ---------- 自建评论 ---------- */
+.efc { padding: 20px 0; }
+.efc-header { font-size: 1.1em; font-weight: 600; margin-bottom: 16px; color: var(--grey-7); }
+.efc-form { margin-bottom: 24px; }
+.efc-row { display: flex; gap: 10px; margin-bottom: 10px; }
+.efc-row input { flex: 1; }
+.efc-form input, .efc-form textarea {
+  border: 1px solid var(--grey-4, #ccc); border-radius: 8px; padding: 8px 12px;
+  font-size: 14px; font-family: inherit; background: var(--grey-1, #fdfdfd); color: inherit;
+  outline: none; transition: border-color .2s;
+}
+.efc-form input:focus, .efc-form textarea:focus { border-color: #ed6ea0; }
+.efc-form textarea { width: 100%; min-height: 90px; resize: vertical; }
+.efc-actions { margin-top: 10px; display: flex; gap: 10px; }
+.efc-submit {
+  border: none; border-radius: 8px; padding: 8px 26px; cursor: pointer; color: #fff;
+  background: linear-gradient(to right, #ed6ea0, #ec8c69); font-size: 14px;
+}
+.efc-submit:disabled { opacity: .6; cursor: default; }
+.efc-cancel { border: 1px solid #ccc; border-radius: 8px; padding: 8px 18px; background: none; cursor: pointer; }
+
+.efc-item { display: flex; gap: 12px; padding: 14px 0; border-top: 1px dashed var(--grey-4, #e5e5e5); }
+.efc-avatar {
+  width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0; color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 600;
+}
+.efc-body { flex: 1; min-width: 0; }
+.efc-meta { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+.efc-name { font-weight: 600; color: var(--grey-7, #333); }
+.efc-time { font-size: 12px; color: var(--grey-5, #999); }
+.efc-reply { font-size: 12px; color: #ed6ea0; cursor: pointer; margin-left: auto; }
+.efc-content { line-height: 1.7; word-break: break-word; }
+.efc-children { margin-left: 0; padding-left: 16px; border-left: 2px solid var(--grey-3, #eff2f3); }
+.efc-children .efc-item { border-top: none; padding-bottom: 4px; }
+.efc-children .efc-avatar { width: 30px; height: 30px; font-size: 14px; }
+.efc-item .efc-form { background: var(--grey-2, #f7f7f7); border-radius: 10px; padding: 12px; margin: 10px 0; }
+
+/* ---------- 图片灯箱 ---------- */
+.efc-lightbox {
+  position: fixed; inset: 0; z-index: 99999; background: rgba(0,0,0,.88);
+  display: flex; align-items: center; justify-content: center; cursor: zoom-out;
+  animation: efcFade .18s ease;
+}
+.efc-lightbox img { max-width: 94vw; max-height: 94vh; border-radius: 6px; box-shadow: 0 8px 40px rgba(0,0,0,.5); }
+@keyframes efcFade { from { opacity: 0; } to { opacity: 1; } }
+
+/* ---------- 富文本内容兼容（wangEditor 产出） ---------- */
+.body.md video { max-width: 100%; border-radius: 8px; }
+.body.md table { max-width: 100%; }
+.body.md iframe { max-width: 100%; }
+.body.md .katex { font-size: 1.05em; }
+pre.mermaid { background: transparent; text-align: center; }

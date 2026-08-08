@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>云小影博客</title>
+    <link>https://blog.i286.com/</link>
+    <description>云影的鼠窝又称云影博客，仅用于分享资源以及发布一些言论，不定时更新一些影视、壁纸、软件、各类教程、音乐和源代码相关的文章。</description>
+    <language>zh-CN</language>
+    <pubDate>Sat, 08 Aug 2026 22:15:18 +0800</pubDate>
+    <item>
+      <title>主题功能全家桶（示例）</title>
+      <link>https://blog.i286.com/article/theme-demo.html</link>
+      <guid>https://blog.i286.com/article/theme-demo.html</guid>
+      <pubDate>Sat, 08 Aug 2026 11:45:00 +0800</pubDate>
+      <description><![CDATA[<p>这里是 efarblog 主题（shoka 风格）全部内容功能的现场演示，写文时可以直接复制本文语法。</p>
+<h2 id="文本样式"><a class="anchor" href="#文本样式">#</a> 文本样式</h2>
+<p><strong>加粗</strong>、<em>斜体</em>、<del>删除线</del>、<ins>下划线</ins>、<ins class="dot">虚线下划线</ins>、<mark>荧光标记</mark>、<code>行内代码</code>。</p>
+<p>行内标签：<span class="label">默认</span> <span class="label warning">警告</span> <span class="label danger">危险</span> <span class="label success">成功</span>，以及 <span class="red">红色</span> <span class="blue">蓝色</span> 文字。</p>
+<h2 id="提示块 note"><a class="anchor" href="#提示块 note">#</a> 提示块 note</h2>
+<div class="note warning"><p>warning 提示块：用于注意事项，内部支持 <strong>Markdown</strong> 语法。</p></div>
+<div class="note info"><p>info 提示块：一般提示信息。</p></div>
+<div class="note danger"><p>danger 提示块：危险操作警告。</p></div>
+<div class="note primary"><p>primary 提示块。</p></div>
+<div class="note success no-icon"><p>success + no-icon 提示块（无图标）。</p></div>
+<h2 id="折叠块"><a class="anchor" href="#折叠块">#</a> 折叠块</h2>
+<details class="primary"><summary>点我展开：这是一段折叠内容</summary><div><p>折叠区域里可以放任意 Markdown，比如图片、代码。</p></div></details>
+<h2 id="测验 quiz"><a class="anchor" href="#测验 quiz">#</a> 测验 quiz</h2>
+<ol><li class="quiz"><p>efarblog 是用什么语言写的？（点击选项看答案）</p>
+<ul class="options">
+<li class="correct">Go</li>
+<li>PHP</li>
+<li>Node.js</li>
+</ul></li></ol>
+<ol><li class="quiz multi"><p>以下哪些是 efarblog 的功能？（多选）</p>
+<ul class="options">
+<li class="correct">自建评论</li>
+<li class="correct">插件开关</li>
+<li>需要 MySQL</li>
+</ul></li></ol>
+<h2 id="代码高亮"><a class="anchor" href="#代码高亮">#</a> 代码高亮</h2>
+<figure class="highlight go"><figcaption data-lang="go"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">package</span> <span class="token class-name">main</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">import</span> <span class="token string">&#34;fmt&#34;</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// 逐行行号 + Prism 风格高亮</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">()</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="7"></td><td><pre>	<span class="token class-name">fmt</span><span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&#34;你好，efarblog&#34;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></table></figure>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">def</span> <span class="token function">fib</span><span class="token punctuation">(</span><span class="token class-name">n</span><span class="token punctuation">):</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token keyword">return</span> <span class="token class-name">n</span> <span class="token keyword">if</span> <span class="token class-name">n</span> <span class="token operator">&lt;</span> <span class="token number">2</span> <span class="token keyword">else</span> <span class="token class-name">fib</span><span class="token punctuation">(</span><span class="token class-name">n</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token class-name">fib</span><span class="token punctuation">(</span><span class="token class-name">n</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span></pre></td></tr></table></figure>
+<h2 id="表格与任务列表"><a class="anchor" href="#表格与任务列表">#</a> 表格与任务列表</h2>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>评论</td>
+<td>内置</td>
+</tr>
+<tr>
+<td>公式</td>
+<td>KaTeX</td>
+</tr>
+<tr>
+<td>流程图</td>
+<td>mermaid</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 已完成事项</li>
+<li><input disabled="" type="checkbox"> 待办事项</li>
+</ul>
+<h2 id="数学公式"><a class="anchor" href="#数学公式">#</a> 数学公式</h2>
+<p>行内公式 $E = mc^2$，块级公式：</p>
+<p>$$\int_a^b f(x),dx = F(b) - F(a)$$</p>
+<h2 id="mermaid 流程图"><a class="anchor" href="#mermaid 流程图">#</a> mermaid 流程图</h2>
+<pre class="mermaid">graph LR
+  A[写文章] --&gt; B{发布?}
+  B --&gt;|是| C[efarblog deploy]
+  B --&gt;|否| D[存草稿]</pre>
+<h2 id="图片（懒加载 + 点击放大）"><a class="anchor" href="#图片（懒加载 + 点击放大）">#</a> 图片（懒加载 + 点击放大）</h2>
+<p><img data-src="/images/background/2.webp" alt="主题背景图"></p>
+<h2 id="视频播放器"><a class="anchor" href="#视频播放器">#</a> 视频播放器</h2>
+<div class="media-container"><div class="player" data-type="video" data-src='[{"name":"演示视频","url":"/uploads/demo-video.mp4"}]'></div></div>
+<h2 id="音频播放器"><a class="anchor" href="#音频播放器">#</a> 音频播放器</h2>
+<div class="media-container"><div class="player" data-type="audio" data-src='[{"name":"测试音频","url":"https://www.w3schools.com/html/horse.mp3"}]'></div></div>
+<h2 id="网易云歌单"><a class="anchor" href="#网易云歌单">#</a> 网易云歌单</h2>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="//music.163.com/outchain/player?type=0&id=6591340038&auto=0&height=430"></iframe>
+<h2 id="链接卡片"><a class="anchor" href="#链接卡片">#</a> 链接卡片</h2>
+<p></p><div class="links"><div class="item" title="云影" style="--block-color:#e9546b"><span class="exturl image" data-url="aHR0cHM6Ly95LjUyZGcuY24=" data-background-image="/images/avatar.webp"></span><div class="info"><span class="exturl title" data-url="aHR0cHM6Ly95LjUyZGcuY24=">云影代挂</span><p class="desc">一个专门卖代挂的网站</p></div></div><div class="item" title="彩虹" style="--block-color:#38a1db"><span class="exturl image" data-url="aHR0cHM6Ly9ibG9nLmNjY3l1bi5jbi8=" data-background-image="/images/avatar.webp"></span><div class="info"><span class="exturl title" data-url="aHR0cHM6Ly9ibG9nLmNjY3l1bi5jbi8=">彩虹的缤纷天地</span><p class="desc">彩虹的缤纷天地</p></div></div></div>
+<h2 id="引用块"><a class="anchor" href="#引用块">#</a> 引用块</h2>
+<blockquote>
+<p>云影的鼠窝，记录点滴生活。
+—— 从 Hexo 到 efarblog</p>
+</blockquote>
+<hr>
+<p>更多用法见 docs/USAGE.md。</p>
+]]></description>
+    </item>
+    <item>
+      <title>光盘打卡挂机任务网站使用教程</title>
+      <link>https://blog.i286.com/article/34d87876.html</link>
+      <guid>https://blog.i286.com/article/34d87876.html</guid>
+      <pubDate>Sat, 05 Nov 2022 14:16:28 +0800</pubDate>
+      <description><![CDATA[<h1 id="导语"><a class="anchor" href="#导语">#</a> 导语</h1>
+<p>一年一度的光盘打卡活动又来了，在去年的这段时间，我已经发布过一次有关“光盘打卡”小程序的脚本使用教程，那时候做的比较简单，又要配置python环境，又要打开电脑挂脚本啥的，非常的不方便，但是最近提前做了准备，为这次的光盘打卡活动写了一个网页挂机程序，可以让你随时随地查询自己的光盘打卡任务情况，无需自己挂机，只需要按照以下的教程，把对应的信息填写到网站上去就行了。</p>
+<h1 id="准备工作"><a class="anchor" href="#准备工作">#</a> 准备工作</h1>
+<p>本次教程主要为token提取教程，分为windows系统(电脑端)和IOS系统(手机端)，为什么要用windows系统和IOS系统作为电脑端和手机端的代表呢？</p>
+<div class="note warning"><p>目前市面上的安卓手机，基本上都是安卓10以上，导致没法root，对于http/https抓包都不友好，结合windows系统又大众化，因此使用windows系统抓包是最好的选择，当然了，最好的最方便的还是ios系统。</p></div>
+<h1 id="windows系统提取Token教程"><a class="anchor" href="#windows系统提取Token教程">#</a> windows系统提取Token教程</h1>
+<div class="note danger"><p>因为现在windows系统的微信客户端版本对小程序架构进行了重构，导致了没法直接利用抓包软件进行抓包，因此我们需要使用低版本的微信客户端，在这里我的建议是使用3.5以下的版本微信客户端</p></div>
+<details class="primary"><summary>微信3.4下载地址</summary><div><p>链接: <span class="exturl" data-url="aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMWdYZTZCTFRJSEhsQTh5bS16c0dOS0E=">https://pan.baidu.com/s/1gXe6BLTIHHlA8ym-zsGNKA</span>  密码: 4f31
+--来自百度网盘超级会员V6的分享</p></div></details>
+<p>利用fiddler进行抓包</p>
+<p>参考博文：https://blog.i286.com/article/a8ee8d33.html</p>
+<div class="note warning"><p>只需要获取token就好了</p></div>
+<h2 id="下载了3.4版本的微信还是没法抓取小程序的数据包解决方法"><a class="anchor" href="#下载了3.4版本的微信还是没法抓取小程序的数据包解决方法">#</a> 下载了3.4版本的微信还是没法抓取小程序的数据包解决方法</h2>
+<p>因为我们知道，3.5之后微信对小程序进行了重构，因此我们在使用高版本的微信的时候，在打开小程序时，会在微信某个目录生成一些文件，因为这些文件导致我们没法抓取数据</p>
+<h3 id="步骤1"><a class="anchor" href="#步骤1">#</a> 步骤1</h3>
+<p>首先打开电脑微信，并任意打开一个微信小程序页面，打开之后呢，启动任务管理器，找到小程序运行文件，并右键打开文件所在目录</p>
+<p><img data-src="https://image.i286.com/images/20221105/w1.png" alt="任务管理器"></p>
+<h3 id="步骤2"><a class="anchor" href="#步骤2">#</a> 步骤2</h3>
+<p>打开小程序对应的目录文件，接着在上方的地址栏目录中找到Plugins目录的下级文件夹（每个小程序对应的文件夹目录可能也会不同，这里以WMPFRuntime为例）</p>
+<p><img data-src="https://image.i286.com/images/20221105/w2.png" alt="文件目录1"></p>
+<h3 id="步骤3"><a class="anchor" href="#步骤3">#</a> 步骤3</h3>
+<p>关闭微信，删除该目录下所有内容，再重新打开3.4版本的微信进行抓包</p>
+<p><img data-src="https://image.i286.com/images/20221105/w3.png" alt="删除目录界面"></p>
+<h1 id="ios系统提取token教程"><a class="anchor" href="#ios系统提取token教程">#</a> ios系统提取token教程</h1>
+<p>IOS相对来说是非常简单的，只需要去Apple Store下载<span class="red">Stream</span>这个软件，按照下方视频教程，进行操作。</p>
+<h2 id="视频教程"><a class="anchor" href="#视频教程">#</a> 视频教程</h2>
+<div class="media-container"><div class="player" data-type="video" data-src='[{"name":"教程","url":"https://image.i286.com/videos/1667648571002852.mp4"}]'></div></div>
+<h1 id="将token提交到挂机平台"><a class="anchor" href="#将token提交到挂机平台">#</a> 将token提交到挂机平台</h1>
+<p>网址：<span class="label red"><span class="exturl" data-url="aHR0cDovL2NwLmkyODYuY29t">http://cp.i286.com</span></span>
+<img data-src="https://image.i286.com/images/20221105/1.png" alt="网站界面"></p>
+<p>进入网站之后
+<mark>第一步</mark>就是要点击&quot;添加Token&quot;</p>
+<p><img data-src="https://image.i286.com/images/20221105/2.png" alt="添加token界面"></p>
+<p><mark>第二步</mark>填写信息，<ins class="dot">查询账号</ins> 相当于一个查询密码，自定义的，可以自由设置，必须要填写，<ins class="dot">必须要记住</ins>，方便后续查询日志</p>
+<p><img data-src="https://image.i286.com/images/20221105/3.png" alt="添加token，填写信息"></p>
+<p>填写完信息后，<span class="red">再</span>点一次&quot;添加token&quot;，随后会提示添加成功或添加失败（有失败原因）</p>
+<p><mark>第三步</mark>查询自己的信息</p>
+<p>点击“查询”，跳转到首页（查询页）</p>
+<p>输入你刚刚设定的查询账号，再点一次“查询” [这一行的步骤可能可以省略]</p>
+<p><img data-src="https://image.i286.com/images/20221105/4.png" alt="查询结果"></p>
+<p>在这里，你可以查看任务执行情况，运行日志，实时能量日志（官方日志），用户实时信息（可以查看当前余额和能量）</p>
+<p><ins class="dot">祝你使用愉快！</ins></p>
+]]></description>
+    </item>
+    <item>
+      <title>光盘打卡小程序自动打卡脚本 python</title>
+      <link>https://blog.i286.com/article/a8ee8d33.html</link>
+      <guid>https://blog.i286.com/article/a8ee8d33.html</guid>
+      <pubDate>Sun, 14 Nov 2021 20:00:07 +0800</pubDate>
+      <description><![CDATA[<h1 id="导语"><a class="anchor" href="#导语">#</a> 导语</h1>
+<p>应学校要求，餐后要去小程序进行光盘打卡，起初想做这个脚本很久的了，但是考虑到学时问题就搁置了，直到这两天得知，可以有学时，因此，就去把这个脚本搞出来并使用了，使用方法比较简单，接下来会一一教学</p>
+<h1 id="准备工作"><a class="anchor" href="#准备工作">#</a> 准备工作</h1>
+<p>windows 系统(mac 考虑到不够大众话就不弄了)、fiddler、python3.7+、电脑版微信最新版(可以启动小程序的就行)</p>
+<p>文末会附上所需要的文件</p>
+<h1 id="安装和配置"><a class="anchor" href="#安装和配置">#</a> 安装和配置</h1>
+<p>安装 python 教程</p>
+<p><img data-src="https://image.i286.com/images/20211115/1.png" alt="步骤1"></p>
+<div class="note warning"><p>务必勾选 Add Python 3.7 to PATH</p></div>
+<p>不然你要自己去配置环境变量了</p>
+<p><img data-src="https://image.i286.com/images/20211115/2.png" alt="步骤2"></p>
+<p><img data-src="https://image.i286.com/images/20211115/3.png" alt="步骤3"></p>
+<p>安装 requests 模块依赖</p>
+<p><img data-src="https://image.i286.com/images/20211115/4.png" alt="步骤4"></p>
+<p>在控制台输入</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>pip install requests</pre></td></tr></table></figure>
+<p><img data-src="https://image.i286.com/images/20211115/5.png" alt="步骤5"></p>
+<p>安装 Fiddler</p>
+<p><img data-src="https://image.i286.com/images/20211115/6.png" alt="步骤6"></p>
+<p><img data-src="https://image.i286.com/images/20211115/7.png" alt="步骤7"></p>
+<p><img data-src="https://image.i286.com/images/20211115/8.png" alt="步骤8"></p>
+<p>配置 Fiddler 配置 HTTPS 证书</p>
+<p><img data-src="https://image.i286.com/images/20211115/9.png" alt="步骤9"></p>
+<p><img data-src="https://image.i286.com/images/20211115/10.png" alt="步骤10"></p>
+<p><img data-src="https://image.i286.com/images/20211115/11.png" alt="步骤11"></p>
+<p><img data-src="https://image.i286.com/images/20211115/12.png" alt="步骤12"></p>
+<p><img data-src="https://image.i286.com/images/20211115/13.png" alt="步骤13"></p>
+<p>ok 之后关闭Fiddler 重新打开</p>
+<h1 id="开始抓取数据 获取 token"><a class="anchor" href="#开始抓取数据 获取 token">#</a> 开始抓取数据 获取 token</h1>
+<p>登录电脑微信，务必把电脑版微信更新到最新版</p>
+<div class="note warning"><p>建议先在手机上打开一次光盘打卡小程序， 这样就可以在微信电脑短打开了</p>
+<p>如果遇到打不开小程序，可以试试退出电脑微信再次登录打开</p></div>
+<p><img data-src="https://image.i286.com/images/20211115/14.png" alt="步骤14"></p>
+<p>打开小程序后回到 Fiddler</p>
+<p><img data-src="https://image.i286.com/images/20211115/15.png" alt="步骤15"></p>
+<p>随便选一个即可，根据图示操作</p>
+<p><img data-src="https://image.i286.com/images/20211115/16.png" alt="步骤16"></p>
+<div class="note warning"><p>务必复制好那串32位 token 哦</p></div>
+<h1 id="修改 plate.py"><a class="anchor" href="#修改 plate.py">#</a> 修改 plate.py</h1>
+<p>修改打卡脚本，右键 plate.py 按图示选择</p>
+<p><img data-src="https://image.i286.com/images/20211115/17.png" alt="步骤17"></p>
+<p>打开后拉到最低 更换 token 即可</p>
+<p><img data-src="https://image.i286.com/images/20211115/18.png" alt="步骤18"></p>
+<p>最后按 Ctrl+S 保存 或者点左上角 File-&gt;save 保存</p>
+<h1 id="验证脚本是否可用"><a class="anchor" href="#验证脚本是否可用">#</a> 验证脚本是否可用</h1>
+<p>双击我们修改好的脚本文件即可</p>
+<p>脚本窗口最小化即可，已经设定成每两小时自动打卡一次</p>
+<p><img data-src="https://image.i286.com/images/20211115/19.png" alt="步骤19"></p>
+<h1 id="功能介绍"><a class="anchor" href="#功能介绍">#</a> 功能介绍</h1>
+<p>由于时间有限，匆忙赶出来的，目前实现的功能有：</p>
+<ol>
+<li>打卡光盘</li>
+<li>喂食小光（可以领取能量）</li>
+<li>领取小光能量</li>
+<li>领取打卡红包</li>
+</ol>
+<h1 id="所需文件"><a class="anchor" href="#所需文件">#</a> 所需文件</h1>
+<ol>
+<li>python3.7 安装包 <span class="exturl" data-url="aHR0cHM6Ly93d2EubGFuem91aS5jb20vaVkwVmR3amtiZWI=">点我下载</span></li>
+<li>Fiddler <span class="exturl" data-url="aHR0cHM6Ly93d2EubGFuem91aS5jb20vaXNDRXp3amtib2I=">点我下载</span></li>
+<li>plate.py <span class="exturl" data-url="aHR0cHM6Ly93d3cuYWxpeXVuZHJpdmUuY29tL3MvU3dyRlJQRHZLWnY=">点我下载</span></li>
+</ol>
+]]></description>
+    </item>
+    <item>
+      <title>Mac下使用宝塔面板[Docker容器篇]</title>
+      <link>https://blog.i286.com/article/3cfc127e.html</link>
+      <guid>https://blog.i286.com/article/3cfc127e.html</guid>
+      <pubDate>Fri, 16 Jul 2021 13:16:00 +0800</pubDate>
+      <description><![CDATA[<h1 id="导语"><a class="anchor" href="#导语">#</a> 导语</h1>
+<p>作为一个 PHP 开发者，一个好的开发环境必然对自身工作效率有很大的要求。以前在 win 的时候习惯用 phpstudy，一直都在用。小皮官方也不负众望，开发出了 mac 版的 phpstudy，但是不够成熟。我试过用虚拟机，但内存开销太大，不值得，后来得知 Docker 可以有类似于虚拟机的功能。</p>
+<h2 id="准备工作"><a class="anchor" href="#准备工作">#</a> 准备工作</h2>
+<p>MAC 系统，Docker最新版【官方下载地址:<span class="exturl" data-url="aHR0cHM6Ly93d3cuZG9ja2VyLmNvbS9nZXQtc3RhcnRlZA==">下载桌面版</span>】</p>
+<h2 id="过程"><a class="anchor" href="#过程">#</a> 过程</h2>
+<p>安装好我们的 Docker 后，我们可以直接在<span class="exturl" data-url="aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS8=">DockerHub</span>(一个类似 GitHub的平台)中搜索到我们需要的容器实例。</p>
+<h4 id="截图示例"><a class="anchor" href="#截图示例">#</a> 截图示例</h4>
+<p><img data-src="https://image.i286.com/images/20210716/1300/iShot2021-07-16%2013.55.54.png" alt="截图"></p>
+<p><img data-src="https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.00.09.png" alt="截图"></p>
+<p>我们选择第一个，根据他的提示来安装就好了。</p>
+<h4 id="小提示"><a class="anchor" href="#小提示">#</a> 小提示</h4>
+<p>这里注意的一点是，建议使用桥接模式运行宝塔镜像，除非你的 mac 是打算做服务器才用 Host。</p>
+<p>如果你用桥接模式，请务必一次性把所需要的端口都加上，比如443，8888，3306那些，不然后续有得你哭的。</p>
+<figure class="highlight sh"><figcaption data-lang="sh"></figcaption><table><tr><td data-num="1"></td><td><pre>docker run -tid --name baota -p 80:80 -p 443:443 -p 8888:8888 -p 888:888 --privileged<span class="token operator">=</span><span class="token builtin">true</span> --shm-size<span class="token operator">=</span>1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota</pre></td></tr></table></figure>
+<div class="note warning"><p>这是我的安装命令</p>
+<figure class="highlight cmd"><figcaption data-lang="cmd"></figcaption><table><tr><td data-num="1"></td><td><pre>docker run -tid --name baota -p 80:80 -p 8888:8888 -p 888:888 -p 20:20 -p 21:21 -p 3306:3306 -p 6379:6379 -p 5555:5555 -p 6371:6371 --privileged=true --shm-size=1g --restart always -v ~/wwwroot:/www/wwwroot pch18/baota</pre></td></tr></table></figure>
+<p>我把80,8888,888,20,21,3306,6379,5555,6371端口都开放了，你也可以自己再加</p></div>
+<p>安装好后，效果图</p>
+<p><img data-src="https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.05.11.png" alt="截图"></p>
+<p><img data-src="https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.06.16.png" alt="截图"></p>
+<p><img data-src="https://image.i286.com/images/20210716/1300/iShot2021-07-16%2014.06.30.png" alt="截图"></p>
+<p>之后你就可以像服务器一样，操作宝塔啦！</p>
+<div class="note danger"><p>安装实例前请务必确保你所需要的端口没有被占用，检查端口占用方法</p>
+<figure class="highlight sh"><figcaption data-lang="sh"></figcaption><table><tr><td data-num="1"></td><td><pre>lsof -i:端口号</pre></td></tr></table></figure></div>
+]]></description>
+    </item>
+    <item>
+      <title>利用反向代理或者CDN直接绑定域名到gitee pages</title>
+      <link>https://blog.i286.com/article/720fc6a2.html</link>
+      <guid>https://blog.i286.com/article/720fc6a2.html</guid>
+      <pubDate>Mon, 01 Feb 2021 19:00:00 +0800</pubDate>
+      <description><![CDATA[<h1 id="导语"><a class="anchor" href="#导语">#</a> 导语</h1>
+<p>前一段时间云影的blog是部署在国外的GitHub里的，也开启Github Pages服务。当一切顺风顺水的时候，不好的东西也来了，那就是某些DNS运营商<del>其实就那三家</del>对该玩意有屏蔽效果，具体表现为可以访问github的官网，就是访问不了你专属的github.io。于是云影就把项目也部署到国内的开源中国里，也开启了相应的pages服务，但是，这玩意居然不能绑定个人域名，如果要绑定必须开启gitee pages pro服务，这个服务还不允许个人购买，只提供给付费企业版！这我忍不了了，于是想方设法的都要把我的域名指向到这里。</p>
+<h1 id="准备工作"><a class="anchor" href="#准备工作">#</a> 准备工作</h1>
+<div class="note warning"><p>以下工作都是在拥有gitee项目并且开启了gitee pages服务的基础上操作的</p></div>
+<p>首先我们要准备一个已经备案的域名，没备案的话用不了国内服务器和或内CDN<del>如果你喜欢国外的服务器和CDN，请无视</del>。</p>
+<ol>
+<li>
+<p>用宝塔作反代。</p>
+<p>把我们准备好的域名解析到自己的宝塔里，然后开启反向代理就行了</p>
+<p><img data-src="https://image.i286.com/images/f1.jpg" alt="f1"></p>
+<p><img data-src="https://image.i286.com/images/f2.jpg" alt="f2"></p>
+<p>代理目录一定要填&quot;/&quot;，以表示所有资源都反向代理</p>
+</li>
+<li>
+<p>当你觉得用服务器来做反代有点烧钱且效果不够好的时候，那么使用CDN来做回显估计对你来说是不错的选择。</p>
+<p>这边使用的是<ins>又拍云</ins>的CDN服务作为演示</p>
+<ol>
+<li>
+<p>创建你自己的CDN加速服务，名称啥的随便填</p>
+</li>
+<li>
+<p>绑定你的域名到<ins>又拍云</ins></p>
+<p><img data-src="https://image.i286.com/images/c1.jpg" alt="c1"></p>
+</li>
+<li>
+<p>设置源站</p>
+<p><img data-src="https://image.i286.com/images/c2.jpg" alt="c2"></p>
+</li>
+<li>
+<p>设置回源host</p>
+<p><img data-src="https://image.i286.com/images/c3.jpg" alt="c3"></p>
+<div class="note warning"><p>源站地址和host地址务必填写的是同一个地址，因为我们现在都是指向自己的gitee项目。</p>
+<p>至于开不开启强制https个人喜欢，云影的建议是开启的，因为我们专属的gitee项目域名就是https协议，如果不开启的话第一次访问可能会造成资源丢失</p></div>
+</li>
+</ol>
+<p>弄了CDN就不需要服务器设置反向代理了，而且CDN省钱又能加速。现在加入<ins class="dot">又拍云联盟</ins>还可以免费获得10G储存空间和15GCDN流量。</p>
+<p>附上本站的解析设置情况</p>
+<p><img data-src="https://image.i286.com/images/b1.jpg" alt="j1"></p>
+<p><img data-src="https://image.i286.com/images/b2.jpg" alt="b2"></p>
+<p>双线路的效果还是很不错的<del>毕竟东西都是免费的</del></p>
+<p><img data-src="https://image.i286.com/images/p1.jpg" alt="p1"></p>
+</li>
+</ol>
+]]></description>
+    </item>
+    <item>
+      <title>2021年支付宝集五福攻略(已过期)</title>
+      <link>https://blog.i286.com/article/b65b4240.html</link>
+      <guid>https://blog.i286.com/article/b65b4240.html</guid>
+      <pubDate>Mon, 01 Feb 2021 01:00:00 +0800</pubDate>
+      <description><![CDATA[<h1 id="攻略"><a class="anchor" href="#攻略">#</a> 攻略</h1>
+<p>一年一度的支付宝集五福活动又来了，今年的奖池是5个亿。截止现在1点钟，已经有超过6w人集齐了五福。</p>
+<ol>
+<li>
+<p><del>扫薇娅图片<ins>必得</ins>万能福</del>BUG修复了</p>
+<p><img data-src="https://image.i286.com/images/zfb/weiya.jpg" alt="薇娅"></p>
+</li>
+<li>
+<p>扫<ins>海尔</ins>、<ins>蒙牛</ins>、<ins>一汽大众</ins>的Logo都可以得福</p>
+<p><img data-src="https://image.i286.com/images/zfb/haier.jfif" alt="">
+<img data-src="https://image.i286.com/images/zfb/mengniu.jpg" alt="">
+<img data-src="https://image.i286.com/images/zfb/yqdz.jfif" alt="">
+{.gallery}</p>
+<p> </p>
+</li>
+<li>
+<p>支付宝搜索关键词可以获得福卡</p>
+<blockquote>
+<p>搜索&quot;消费券&quot;大概率获得沾沾卡</p>
+</blockquote>
+<blockquote>
+<p>搜索&quot;蒙牛&quot;、&quot;大众&quot;、&quot;肯德基&quot;、&quot;麦当劳&quot;、&quot;银泰百货&quot;、&quot;滴滴&quot;、&quot;大悦城&quot;、&quot;爱琴海&quot;、&quot;星河&quot;、&quot;砂之船奥莱&quot;、&quot;薇娅&quot;可以抽福卡</p>
+</blockquote>
+<blockquote>
+<p>支付宝搜索&quot;商家服务&quot;
+支付宝商家服务：支付宝APP我的--商家服务--新年福气满满（没有领过收款码的，这个参加不了）</p>
+</blockquote>
+<div class="note info no-icon"><p>沾沾卡的机制已经改了，即使对方只有一张敬业福，也会给你显示3张福，然后造成干扰，云影的5张沾沾卡都沾了空气</p></div>
+</li>
+<li>
+<p>扫特殊福字额外领福</p>
+<div class="note primary no-icon"><p>把以下的图片放大，扫商标或者Logo都可以获得福卡</p></div>
+<p><img data-src="https://image.i286.com/images/zfb/f2.jpg" alt="f1"></p>
+<p><img data-src="https://image.i286.com/images/zfb/f1.jpg" alt="f2"></p>
+</li>
+<li>
+<p>手写福字获得副卡</p>
+<p>在集五福主页面进入，自己写福字可以获得两张福卡，每天都可以写</p>
+</li>
+<li>
+<p>每天在手机淘宝APP的<ins>芭芭农场</ins>施肥也可以有概率获得福卡</p>
+</li>
+<li>
+<p>在某些指定的APP里使用某些功能是可以获得盲盒，也是可以获得福卡的</p>
+<p>例如<ins class="dot">网易云</ins> 搜索周深的《望》就可以获得锦鲤，然后抓锦鲤就可以获得福卡了</p>
+<div class="note info"><p>这里要注意的是，务必把那些APP都更新到最新版，不然是没有盲盒的</p></div>
+<p>附上一些APP直接领取福卡入口链接：</p>
+<p>1、天猫精灵</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1KSU5HX0xJTkc=">https://render.alipay.com/p/c/17yq18lq3slc?source=JING_LING</span></p>
+<p>2、飞猪</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1GRUlfWkhV">https://render.alipay.com/p/c/17yq18lq3slc?source=FEI_ZHU</span></p>
+<p>3、优酷</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1ZT1VLVV9UVg==">https://render.alipay.com/p/c/17yq18lq3slc?source=YOUKU_TV</span></p>
+<p>4、淘票票</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1QSUFPX1BJQU8=">https://render.alipay.com/p/c/17yq18lq3slc?source=PIAO_PIAO</span></p>
+<p>5、手机天猫</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1USUFOX01BTw==">https://render.alipay.com/p/c/17yq18lq3slc?source=TIAN_MAO</span></p>
+<p>6、考拉</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1LQU9fTEE=">https://render.alipay.com/p/c/17yq18lq3slc?source=KAO_LA</span></p>
+<p>7、菜鸟</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1DQUlfTklBTw==">https://render.alipay.com/p/c/17yq18lq3slc?source=CAI_NIAO</span></p>
+<p>8、新华社</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1YSU5IVUFfU0hF">https://render.alipay.com/p/c/17yq18lq3slc?source=XINHUA_SHE</span></p>
+<p>9、江南百景图</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1CQUlfSklOR1RV">https://render.alipay.com/p/c/17yq18lq3slc?source=BAI_JINGTU</span></p>
+<p>10、科创中国</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1LRV9DSFVBTkc=">https://render.alipay.com/p/c/17yq18lq3slc?source=KE_CHUANG</span></p>
+<p>11、科技工作者之家</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1LRUpJX1pISUpJQQ==">https://render.alipay.com/p/c/17yq18lq3slc?source=KEJI_ZHIJIA</span></p>
+<p>12、上观新闻</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1KSUVGQU5HX1JJQkFP">https://render.alipay.com/p/c/17yq18lq3slc?source=JIEFANG_RIBAO</span></p>
+<p>13、新安晚报</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1EQV9XQU4=">https://render.alipay.com/p/c/17yq18lq3slc?source=DA_WAN</span></p>
+<p>14、南京紫金山新闻</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1aSUpJTl9TSEFO">https://render.alipay.com/p/c/17yq18lq3slc?source=ZIJIN_SHAN</span></p>
+<p>15、中国蓝新闻</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1aSE9OR0dVT19MQU4=">https://render.alipay.com/p/c/17yq18lq3slc?source=ZHONGGUO_LAN</span></p>
+<p>16、大河财立方</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1DQUlfTElGQU5H">https://render.alipay.com/p/c/17yq18lq3slc?source=CAI_LIFANG</span></p>
+<p>17、正观APP</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1aSEVOR19HVUFO">https://render.alipay.com/p/c/17yq18lq3slc?source=ZHENG_GUAN</span></p>
+<p>18、江西新闻客户端</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1KSUFOR1hJX1hJTldFTg==">https://render.alipay.com/p/c/17yq18lq3slc?source=JIANGXI_XINWEN</span></p>
+<p>19、羊城晚报</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1ZQU5HX0NIRU5H">https://render.alipay.com/p/c/17yq18lq3slc?source=YANG_CHENG</span></p>
+<p>20、N视频</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1OQU5fRFU=">https://render.alipay.com/p/c/17yq18lq3slc?source=NAN_DU</span></p>
+<p>21、三亚日报</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1TQU5ZQV9SSUJBTw==">https://render.alipay.com/p/c/17yq18lq3slc?source=SANYA_RIBAO</span></p>
+<p>22、开屏新闻</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1DSFVOQ0hFTkdfV0FOQkFP">https://render.alipay.com/p/c/17yq18lq3slc?source=CHUNCHENG_WANBAO</span></p>
+<p>23、天眼新闻</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1HVUlaSE9VX0RVU0hJQkFP">https://render.alipay.com/p/c/17yq18lq3slc?source=GUIZHOU_DUSHIBAO</span></p>
+<p>24、黄河plus</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1IVUFOR19IRQ==">https://render.alipay.com/p/c/17yq18lq3slc?source=HUANG_HE</span></p>
+<p>25、陕西头条</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1TSEFOWElfVE9VVElBTw==">https://render.alipay.com/p/c/17yq18lq3slc?source=SHANXI_TOUTIAO</span></p>
+<p>26、新京报</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1YSU5KSU5HX0JBTw==">https://render.alipay.com/p/c/17yq18lq3slc?source=XINJING_BAO</span></p>
+<p>27、津云客户端</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1KSU5fWVVO">https://render.alipay.com/p/c/17yq18lq3slc?source=JIN_YUN</span></p>
+<p>28、重庆日报</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1DSE9OR19RSU5H">https://render.alipay.com/p/c/17yq18lq3slc?source=CHONG_QING</span></p>
+<p>29、龙头新闻</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1MT05HVE9VX1hJTldFTg==">https://render.alipay.com/p/c/17yq18lq3slc?source=LONGTOU_XINWEN</span></p>
+<p>30、风口财经</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1GRU5HS09VX0NBSUpJTkc=">https://render.alipay.com/p/c/17yq18lq3slc?source=FENGKOU_CAIJING</span></p>
+<p>31、齐鲁晚报</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1RSUxVX1dBTkJBTw==">https://render.alipay.com/p/c/17yq18lq3slc?source=QILU_WANBAO</span></p>
+<p>32、国家政务服务平台</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1HVU9XVV9ZVUFO">https://render.alipay.com/p/c/17yq18lq3slc?source=GUOWU_YUAN</span></p>
+<p>33、电子社保卡</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1SRU5fU0hF">https://render.alipay.com/p/c/17yq18lq3slc?source=REN_SHE</span></p>
+<p>34、医保局</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1ZSV9CQU8=">https://render.alipay.com/p/c/17yq18lq3slc?source=YI_BAO</span></p>
+<p>35、豫事办</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1ZVVNISV9CQU4=">https://render.alipay.com/p/c/17yq18lq3slc?source=YUSHI_BAN</span></p>
+<p>36、鄂汇办</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1FSFVJX0JBTg==">https://render.alipay.com/p/c/17yq18lq3slc?source=EHUI_BAN</span></p>
+<p>37、随申办</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1TVUlTSEVOX0JBTg==">https://render.alipay.com/p/c/17yq18lq3slc?source=SUISHEN_BAN</span></p>
+<p>38、深圳交警</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1TSEVOWkhFTl9KSUFPSklORw==">https://render.alipay.com/p/c/17yq18lq3slc?source=SHENZHEN_JIAOJING</span></p>
+<p>39、赣服通</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1HQU5GVV9UT05H">https://render.alipay.com/p/c/17yq18lq3slc?source=GANFU_TONG</span></p>
+<p>40、安徽税务局</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1BTkhVSV9TSFVJV1U=">https://render.alipay.com/p/c/17yq18lq3slc?source=ANHUI_SHUIWU</span></p>
+<p>41、无锡公积金</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1XVVhJX0dPTkdKSUpJTg==">https://render.alipay.com/p/c/17yq18lq3slc?source=WUXI_GONGJIJIN</span></p>
+<p>42、上海公积金</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1TSEFOR0hBSV9HT05HSklKSU4=">https://render.alipay.com/p/c/17yq18lq3slc?source=SHANGHAI_GONGJIJIN</span></p>
+<p>43、天府通办</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1USUFORlVfVE9ORw==">https://render.alipay.com/p/c/17yq18lq3slc?source=TIANFU_TONG</span></p>
+<p>44、青岛大数据局</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1RSU5HREFOX0RBU0hVSlU=">https://render.alipay.com/p/c/17yq18lq3slc?source=QINGDAN_DASHUJU</span></p>
+<p>45、皖事通</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1XQU5TSElfVE9ORw==">https://render.alipay.com/p/c/17yq18lq3slc?source=WANSHI_TONG</span></p>
+<p>46、闽政通</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1NSU5aSEVOR19UT05H">https://render.alipay.com/p/c/17yq18lq3slc?source=MINZHENG_TONG</span></p>
+<p>47、美图秀秀</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1NRUlfVFU=">https://render.alipay.com/p/c/17yq18lq3slc?source=MEI_TU</span></p>
+<p>48、美颜相机</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1NRUlfWUFO">https://render.alipay.com/p/c/17yq18lq3slc?source=MEI_YAN</span></p>
+<p>49、芒果TV</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1NQU5HX0dVTw==">https://render.alipay.com/p/c/17yq18lq3slc?source=MANG_GUO</span></p>
+<p>50、快手</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1LVUFJX1NIT1U=">https://render.alipay.com/p/c/17yq18lq3slc?source=KUAI_SHOU</span></p>
+<p>51、网易云音乐</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1XQU5HWUlfWVVO">https://render.alipay.com/p/c/17yq18lq3slc?source=WANGYI_YUN</span></p>
+<p>52、书旗小说</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9yZW5kZXIuYWxpcGF5LmNvbS9wL2MvMTd5cTE4bHEzc2xjP3NvdXJjZT1TSFVfUUk=">https://render.alipay.com/p/c/17yq18lq3slc?source=SHU_QI</span></p>
+<p>部分APP入口：</p>
+<p>1）. 闲鱼APP：首页--热门活动
+2）. 菜鸟裹裹APP：首页幻灯片【喜获一张随机五福卡】参与
+3）. 考拉APP：我的考拉--卡拉乐园--集五福</p>
+</li>
+</ol>
+<h1 id="小结"><a class="anchor" href="#小结">#</a> 小结</h1>
+<p>今年集五福太简单了，云影只花了10分钟不到就集好了一套福。因为不懂事，把万能福拿来当<ins>和谐福</ins>用了<del>因为太着急了</del>，现在小号还差敬业福没出来。今年人多，截止完稿，已经有8w人集齐了。</p>
+]]></description>
+    </item>
+    <item>
+      <title>记录把hexo搭建在本地并部署到GitHub全过程</title>
+      <link>https://blog.i286.com/article/d4bdd3a6.html</link>
+      <guid>https://blog.i286.com/article/d4bdd3a6.html</guid>
+      <pubDate>Sat, 30 Jan 2021 10:16:00 +0800</pubDate>
+      <description><![CDATA[<h1 id="导语"><a class="anchor" href="#导语">#</a> 导语</h1>
+<p>云影最近不知道什么原因，想把博客搞回来，之前的<span class="label warning">blog.iefar.cn</span>使用的是emlog5.3.1版本，由于这个版本官方不再维护更新，我自己折腾的fys主题（破解版）又舍不得丢弃，所以一直不敢升emlog6.0。而且emlog5.3.1版本优化不是很好，可能是我搭载的插件过多，又或许是我用的是腾讯云的学生机，配置带不起来<del>没办法，没钱啊</del> 后来就百度，了解到了可以把纯静态的网页部署到github，那么我想起了一些纯静态的博客<del>以前也想做，只是觉得麻烦</del> 例如 <ins>Hugo</ins>、<ins>Hexo</ins>、<ins>Jekyll</ins>、<ins>Pelican</ins>等等，最终在逼乎的建议参考下，选择了<ins>Hexo</ins>。</p>
+<h1 id="安装git到Windows"><a class="anchor" href="#安装git到Windows">#</a> 安装git到Windows</h1>
+<p>目前云影只把项目放到windows环境，并从本地部署到git，MAC的后续可能会更新。</p>
+<ol>
+<li>
+<p>下载git到本地 <span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS8=">https://git-scm.com/</span></p>
+</li>
+<li>
+<p>打开安装包，并一路next即可 不懂的可以参考 <span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20veHVld2Vpc3VveW9uZy9wLzExOTE0MDQ1Lmh0bWw=">windows系统Git安装详解</span></p>
+</li>
+</ol>
+<h1 id="安装nodeJs"><a class="anchor" href="#安装nodeJs">#</a> 安装nodeJs</h1>
+<ol>
+<li>从官网上下载node.js安装包 <span class="exturl" data-url="aHR0cDovL25vZGVqcy5jbi9kb3dubG9hZC8=">http://nodejs.cn/download/</span></li>
+<li>打开安装包，除了修改安装路径，其余的也是可以一路next即可 不懂的可以参考 <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTAyNTUzMTAvYXJ0aWNsZS9kZXRhaWxzLzUyMjA1MTMyP3V0bV9tZWRpdW09ZGlzdHJpYnV0ZS5wY19yZWxldmFudC5ub25lLXRhc2stYmxvZy1CbG9nQ29tbWVuZEZyb21NYWNoaW5lTGVhcm5QYWkyLTEuY29udHJvbCZkZXB0aF8xLXV0bV9zb3VyY2U9ZGlzdHJpYnV0ZS5wY19yZWxldmFudC5ub25lLXRhc2stYmxvZy1CbG9nQ29tbWVuZEZyb21NYWNoaW5lTGVhcm5QYWkyLTEuY29udHJvbA==">Node.js入门一安装篇</span></li>
+</ol>
+<h1 id="安装Hexo"><a class="anchor" href="#安装Hexo">#</a> 安装Hexo</h1>
+<p>在确保git和node正常安装完成后，就可以搭建我们的主角——<ins>Hexo</ins>了</p>
+<ol>
+<li>
+<p>在本地新建一个文件夹</p>
+<p><img data-src="https://image.i286.com/images/hexo/1.jpg" alt="新建文件夹"></p>
+</li>
+<li>
+<p>在这个文件夹里右键，点击Git Here</p>
+<p><img data-src="https://image.i286.com/images/hexo/2.jpg" alt="git here"></p>
+</li>
+<li>
+<p>配置全局的git 信息，方便以后部署到github</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>git config --global user.name <span class="token string">&#34;GitHub用户名&#34;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>git config --global user.email <span class="token string">&#34;GitHub邮箱&#34;</span></pre></td></tr></table></figure>
+</li>
+<li>
+<p>生成ssh密钥文件</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>ssh-keygen -t rsa -C <span class="token string">&#34;Github邮箱”</span></pre></td></tr></table></figure>
+</li>
+<li>
+<p>前往github创建个人仓库 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25ldw==">https://github.com/new</span></p>
+<div class="note warning"><ol>
+<li>
+<p>名字必须是<ins>username.github.io</ins> 这里的<ins class="dot">username</ins>指代的是你的git用户名</p>
+</li>
+<li>
+<p>权限选择<ins>Public</ins>(公开)</p>
+</li>
+</ol></div>
+<p>新建仓库完成后，可以到个人设置添加<span class="label">ssh keys</span></p>
+<p><img data-src="https://image.i286.com/images/hexo/3.jpg" alt="添加sshKeys"></p>
+<p>完了以后我们使用命令</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>ssh git@github.com</pre></td></tr></table></figure>
+<p>进行验证，验证结果如下</p>
+<p><img data-src="https://image.i286.com/images/hexo/4.jpg" alt="验证结果"></p>
+<p>只有出现这样的界面才算是成功</p>
+</li>
+<li>
+<p>安装hexo到本地环境</p>
+<p>在你当前文件夹，打开git命令行并运行</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>npm install -g hexo</pre></td></tr></table></figure>
+<p>安装hexo，安装完成结果图</p>
+<p><img data-src="https://image.i286.com/images/hexo/5.jpg" alt="安装hexo完成"></p>
+<p>我们输入</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo</pre></td></tr></table></figure>
+<p>查看hexo是否正确安装并且能够运行hexo命令</p>
+<p><img data-src="https://image.i286.com/images/hexo/6.jpg" alt="检验hexo"></p>
+<ol>
+<li>
+<p>开始初始化hexo博客工程</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo init</pre></td></tr></table></figure>
+<p><img data-src="https://image.i286.com/images/hexo/7.jpg" alt="初始化hexo"></p>
+</li>
+<li>
+<p>编译博客</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo g</pre></td></tr></table></figure>
+<p><img data-src="https://image.i286.com/images/hexo/8.jpg" alt="编译博客"></p>
+</li>
+<li>
+<p>启动本地服务器对博客进行预览</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo s</pre></td></tr></table></figure>
+<p><img data-src="https://image.i286.com/images/hexo/9.jpg" alt="启动并预览"></p>
+<p>这时候我们可以在浏览器打开<span class="label success">localhost:4000</span>就可以访问我们的网站了</p>
+<p><img data-src="https://image.i286.com/images/hexo/10.jpg" alt="预览图"></p>
+</li>
+<li>
+<p>常用的hexo命令</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 部署到git平台或者其他平台</span></pre></td></tr><tr><td data-num="2"></td><td><pre>hexo d</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment"># 清除缓存</span></pre></td></tr><tr><td data-num="4"></td><td><pre>hexo clean</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment"># 升级hexo </span></pre></td></tr><tr><td data-num="6"></td><td><pre>npm update hexo -g</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment"># 合并使用 例如 清除缓存并编译然后部署到github</span></pre></td></tr><tr><td data-num="8"></td><td><pre>hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d</pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment"># 合并使用 例如 清除缓存并编译然后启动本地服务器</span></pre></td></tr><tr><td data-num="10"></td><td><pre>hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo s</pre></td></tr></table></figure>
+<div class="note warning"><p>个人建议，没必要<span class="label warning">hexo clean</span>的时候就不需要运行这个命令了，但是部署到git的话，建议还是先清除一下缓存</p></div>
+</li>
+</ol>
+</li>
+<li>
+<p>安装hexo主题并修改默认主题</p>
+<p>hexo的主题有很多很多，官方默认的主题是<ins>landscape</ins> ，主流的有：next、yilia、indigo等等</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 这里以next主题为例</span></pre></td></tr><tr><td data-num="2"></td><td><pre>git clone --branch v5.1.2 https://github.com/iissnan/hexo-theme-next themes/next</pre></td></tr></table></figure>
+<p>由于主题一般都比较大，再加上github是国外的，可能<ins>克隆</ins>起来比较慢，耐心等待即可</p>
+<p><img data-src="https://image.i286.com/images/hexo/12.jpg" alt="等待过程"></p>
+<p>安装完成示例图</p>
+<p><img data-src="https://image.i286.com/images/hexo/11.jpg" alt="安装主题完成"></p>
+<p>修改配置文件，你博客根目录的<span class="label">_config.yml</span>文件</p>
+<p><img data-src="https://image.i286.com/images/hexo/13.jpg" alt="_config.yml"></p>
+<p>把theme默认的<span class="label">landscape</span>改成next</p>
+<figure class="highlight yaml"><figcaption data-lang="yaml"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token class-name">theme</span><span class="token punctuation">:</span> next</pre></td></tr></table></figure>
+<p><img data-src="https://image.i286.com/images/hexo/14.jpg" alt="next"></p>
+<p>然后重新启动一下我们的本地服务器 建议先清除并编译</p>
+<p>如果报以下一样的错误</p>
+<p><img data-src="https://image.i286.com/images/hexo/15.jpg" alt="报错"></p>
+<p>这是因为hexo5.0把swig给删除了，需要手动安装一下</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>npm i hexo-renderer-swig</pre></td></tr></table></figure>
+<p>再次访问</p>
+<p><img data-src="https://image.i286.com/images/hexo/16.jpg" alt="访问"></p>
+<p>这样我们的主题就安装完成了 更多的内容请参考你使用的主题说明文档</p>
+</li>
+<li>
+<p>部署到git</p>
+<p>在部署之前，我们需要安装hexo的部署插件</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>npm install hexo-deployer-git --save</pre></td></tr></table></figure>
+<p>修改网站的<span class="label">_config.yml</span></p>
+<p><img data-src="https://image.i286.com/images/hexo/17.jpg" alt="部署1"></p>
+<p>改成这样</p>
+<figure class="highlight yaml"><figcaption data-lang="yaml"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token class-name">deploy</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token class-name">repository</span><span class="token punctuation">:</span> git@github.com:efarxs/efarxs.github.io.git <span class="token comment">#刚才创建的github仓库的git地址 这里以我的作为示例，请务必改成你自己的</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token class-name">type</span><span class="token punctuation">:</span> git</pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token class-name">branch</span><span class="token punctuation">:</span> master</pre></td></tr></table></figure>
+<p>然后重新编译，并执行部署命令</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo d</pre></td></tr></table></figure>
+<p><img data-src="https://image.i286.com/images/hexo/18.jpg" alt="部署"></p>
+<p>成功部署后，就可以登录github的项目路径查看该网站了</p>
+<p>http://你的用户名.github.io</p>
+</li>
+<li>
+<p>安装hexo-admin 可以给可视化管理文章<del>虽然我不用，哈哈</del></p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>npm install hexo-admin --save</pre></td></tr></table></figure>
+<p>安装好后重新编译一下，并启动本地服务器，然后浏览器打开<ins>localhost:4000/admin</ins>就可以进入hexo-admin界面了</p>
+<p>在这里你可以编辑/发布文章，还可以存为草稿</p>
+<p><img data-src="https://image.i286.com/images/hexo/19.jpg" alt="hexo-admin"></p>
+<p>具体使用方法可以参考 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2phcmVkbHkvaGV4by1hZG1pbg==">https://github.com/jaredly/hexo-admin</span></p>
+</li>
+<li>
+<p>配置github Pages绑定自己的域名到github</p>
+<p>打开你的项目，点击<span class="label">Settings</span>-&gt;<span class="label">Options</span>，下拉找到GitHub Pages配置</p>
+<p>默认只需要填写Custom domain的值就好，需要先把你的域名CNAME解析到username.github.io. 这里的<ins class="dot">username</ins>指代的是你的GitHub用户名</p>
+<p>然后就可以直接用你的域名访问了，不会的可以参考 <span class="exturl" data-url="aHR0cHM6Ly9zZWdtZW50ZmF1bHQuY29tL2EvMTE5MDAwMDAxMTIwMzcxMQ==">GitHub Pages绑定个人域名</span></p>
+</li>
+</ol>
+<h1 id="小结"><a class="anchor" href="#小结">#</a> 小结</h1>
+<p>​		以上就是我在搭建hexo博客的全过程了，当然后续的配置修改和使用模板完全是根据个人习惯的，这里这是举个例子作为演示。如果你真的想更深入hexo，可以去<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">hexo.io</span>了解更多关于hexo的内容。感谢你的阅览！</p>
+]]></description>
+    </item>
+    <item>
+      <title>支付宝转账操作类[php]</title>
+      <link>https://blog.i286.com/article/bc6c4e07.html</link>
+      <guid>https://blog.i286.com/article/bc6c4e07.html</guid>
+      <pubDate>Fri, 29 Jan 2021 05:32:00 +0800</pubDate>
+      <description><![CDATA[<h1 id="代码示例"><a class="anchor" href="#代码示例">#</a> 代码示例</h1>
+<figure class="highlight php"><figcaption data-lang="php"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;?</span><span class="token class-name">php</span> </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">// | Quotes [ 没有目标的人生就是张拼图，反之则是蓝图]</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// | Author: 云影 &lt;8711973@qq.com&gt;</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment">// | Date: 2018年12月16日</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment">//支付宝转账操作类</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">Alit</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token keyword">private</span> <span class="token variable">$appId</span> <span class="token operator">=</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span><span class="token comment">//APPID</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token keyword">private</span> <span class="token variable">$rsaPrivateKey</span> <span class="token operator">=</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span><span class="token comment">//私钥</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token keyword">private</span> <span class="token variable">$rsaPublicKey</span> <span class="token operator">=</span> <span class="token string">&#39;&#39;</span><span class="token punctuation">;</span><span class="token comment">//支付宝公钥</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token keyword">private</span> <span class="token variable">$payerName</span> <span class="token operator">=</span> <span class="token string">&#39;云影在线转账小程序&#39;</span><span class="token punctuation">;</span><span class="token comment">//转账者名称</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token keyword">private</span> <span class="token variable">$Aop</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    </pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">()</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="23"></td><td><pre>        <span class="token comment">//引入支付宝文件</span></pre></td></tr><tr><td data-num="24"></td><td><pre>        <span class="token keyword">include_once</span> <span class="token string">&#39;AopSdk.php&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="25"></td><td><pre>        </pre></td></tr><tr><td data-num="26"></td><td><pre>        <span class="token comment">//实例化</span></pre></td></tr><tr><td data-num="27"></td><td><pre>        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">\AopClient</span><span class="token punctuation">();</span></pre></td></tr><tr><td data-num="28"></td><td><pre>        <span class="token comment">//配置信息</span></pre></td></tr><tr><td data-num="29"></td><td><pre>        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">gatewayUrl</span> <span class="token operator">=</span> <span class="token string">&#39;https://openapi.alipay.com/gateway.do&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="30"></td><td><pre>        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">appId</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">appId</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="31"></td><td><pre>        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">rsaPrivateKey</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">rsaPrivateKey</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="32"></td><td><pre>        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">alipayrsaPublicKey</span><span class="token operator">=</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">rsaPublicKey</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="33"></td><td><pre>        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">apiVersion</span> <span class="token operator">=</span> <span class="token string">&#39;1.0&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="34"></td><td><pre>        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">signType</span> <span class="token operator">=</span> <span class="token string">&#39;RSA2&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="35"></td><td><pre>        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">postCharset</span><span class="token operator">=</span><span class="token string">&#39;UTF-8&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="36"></td><td><pre>        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">format</span><span class="token operator">=</span><span class="token string">&#39;json&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="37"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="38"></td><td><pre>    </pre></td></tr><tr><td data-num="39"></td><td><pre>    <span class="token string">/**</span></pre></td></tr><tr><td data-num="40"></td><td><pre><span class="token string">     * 单笔转账到支付宝</span></pre></td></tr><tr><td data-num="41"></td><td><pre><span class="token string">     * @param unknown $orderId</span></pre></td></tr><tr><td data-num="42"></td><td><pre><span class="token string">     * @param unknown $payAccount</span></pre></td></tr><tr><td data-num="43"></td><td><pre><span class="token string">     * @param unknown $payAname</span></pre></td></tr><tr><td data-num="44"></td><td><pre><span class="token string">     * @param unknown $payAmount</span></pre></td></tr><tr><td data-num="45"></td><td><pre><span class="token string">     * @param unknown $payMemo</span></pre></td></tr><tr><td data-num="46"></td><td><pre><span class="token string">     */</span></pre></td></tr><tr><td data-num="47"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">Transfer</span><span class="token punctuation">(</span><span class="token variable">$orderId</span><span class="token punctuation">,</span><span class="token variable">$payAccount</span><span class="token punctuation">,</span><span class="token variable">$payName</span><span class="token punctuation">,</span><span class="token variable">$payAmount</span><span class="token punctuation">,</span><span class="token variable">$payMemo</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="48"></td><td><pre>    <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="49"></td><td><pre>        <span class="token comment">//导入请求</span></pre></td></tr><tr><td data-num="50"></td><td><pre>        <span class="token variable">$request</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">\AlipayFundTransToaccountTransferRequest</span> <span class="token punctuation">();</span></pre></td></tr><tr><td data-num="51"></td><td><pre>        <span class="token variable">$request</span><span class="token operator">-&gt;</span><span class="token class-name">setBizContent</span><span class="token punctuation">(</span><span class="token string">&#34;{&#34;</span> <span class="token operator">.</span></pre></td></tr><tr><td data-num="52"></td><td><pre>            <span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">out_biz_no</span><span class="token string">\&#34;</span><span class="token string">:</span><span class="token string">\&#34;</span><span class="token string">&#34;</span><span class="token operator">.</span><span class="token variable">$orderId</span><span class="token operator">.</span><span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">,&#34;</span> <span class="token operator">.//</span><span class="token class-name">商户生成订单号</span></pre></td></tr><tr><td data-num="53"></td><td><pre>            <span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">payee_type</span><span class="token string">\&#34;</span><span class="token string">:</span><span class="token string">\&#34;</span><span class="token string">ALIPAY_LOGONID</span><span class="token string">\&#34;</span><span class="token string">,&#34;</span> <span class="token operator">.//</span><span class="token class-name">收款方支付宝账号类型</span></pre></td></tr><tr><td data-num="54"></td><td><pre>            <span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">payee_account</span><span class="token string">\&#34;</span><span class="token string">:</span><span class="token string">\&#34;</span><span class="token string">&#34;</span><span class="token operator">.</span><span class="token variable">$payAccount</span><span class="token operator">.</span><span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">,&#34;</span> <span class="token operator">.//</span><span class="token class-name">收款方账号</span></pre></td></tr><tr><td data-num="55"></td><td><pre>            <span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">amount</span><span class="token string">\&#34;</span><span class="token string">:</span><span class="token string">\&#34;</span><span class="token string">&#34;</span><span class="token operator">.</span><span class="token variable">$payAmount</span><span class="token operator">.</span><span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">,&#34;</span> <span class="token operator">.//</span><span class="token class-name">总金额</span></pre></td></tr><tr><td data-num="56"></td><td><pre>            <span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">payer_show_name</span><span class="token string">\&#34;</span><span class="token string">:</span><span class="token string">\&#34;</span><span class="token string">&#34;</span><span class="token operator">.</span><span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">payerName</span><span class="token operator">.</span><span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">,&#34;</span> <span class="token operator">.//</span><span class="token class-name">付款方账户</span></pre></td></tr><tr><td data-num="57"></td><td><pre>            <span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">payee_real_name</span><span class="token string">\&#34;</span><span class="token string">:</span><span class="token string">\&#34;</span><span class="token string">&#34;</span><span class="token operator">.</span><span class="token variable">$payName</span><span class="token operator">.</span><span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">,&#34;</span> <span class="token operator">.//</span><span class="token class-name">收款方姓名</span></pre></td></tr><tr><td data-num="58"></td><td><pre>            <span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">remark</span><span class="token string">\&#34;</span><span class="token string">:</span><span class="token string">\&#34;</span><span class="token string">&#34;</span><span class="token operator">.</span><span class="token variable">$payMemo</span><span class="token operator">.</span><span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">&#34;</span> <span class="token operator">.//</span><span class="token class-name">转账备注</span></pre></td></tr><tr><td data-num="59"></td><td><pre>            <span class="token string">&#34;}&#34;</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="60"></td><td><pre>        <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">execute</span><span class="token punctuation">(</span><span class="token variable">$request</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="61"></td><td><pre>        </pre></td></tr><tr><td data-num="62"></td><td><pre>        <span class="token variable">$responseNode</span> <span class="token operator">=</span> <span class="token class-name">str_replace</span><span class="token punctuation">(</span><span class="token string">&#34;.&#34;</span><span class="token punctuation">,</span> <span class="token string">&#34;_&#34;</span><span class="token punctuation">,</span> <span class="token variable">$request</span><span class="token operator">-&gt;</span><span class="token class-name">getApiMethodName</span><span class="token punctuation">())</span> <span class="token operator">.</span> <span class="token string">&#34;_response&#34;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="63"></td><td><pre>        <span class="token variable">$resultCode</span> <span class="token operator">=</span> <span class="token variable">$result</span><span class="token operator">-&gt;</span><span class="token variable">$responseNode</span><span class="token operator">-&gt;</span><span class="token class-name">code</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="64"></td><td><pre>        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">empty</span><span class="token punctuation">(</span><span class="token variable">$resultCode</span><span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span><span class="token variable">$resultCode</span> <span class="token operator">==</span> <span class="token number">10000</span><span class="token punctuation">){</span></pre></td></tr><tr><td data-num="65"></td><td><pre>            <span class="token keyword">return</span> <span class="token keyword">true</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="66"></td><td><pre>        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="67"></td><td><pre>            <span class="token keyword">return</span> <span class="token variable">$result</span><span class="token operator">-&gt;</span><span class="token variable">$responseNode</span><span class="token operator">-&gt;</span><span class="token class-name">sub_msg</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="68"></td><td><pre>        <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="69"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="70"></td><td><pre>    </pre></td></tr><tr><td data-num="71"></td><td><pre>    <span class="token string">/**</span></pre></td></tr><tr><td data-num="72"></td><td><pre><span class="token string">     * 查单</span></pre></td></tr><tr><td data-num="73"></td><td><pre><span class="token string">     * @param unknown $orderId 商户生成的订单号</span></pre></td></tr><tr><td data-num="74"></td><td><pre><span class="token string">     */</span></pre></td></tr><tr><td data-num="75"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">Query</span><span class="token punctuation">(</span><span class="token variable">$orderId</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="76"></td><td><pre>    <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="77"></td><td><pre>        <span class="token comment">//导入请求</span></pre></td></tr><tr><td data-num="78"></td><td><pre>        <span class="token variable">$request</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">\AlipayFundTransOrderQueryRequest</span> <span class="token punctuation">();</span></pre></td></tr><tr><td data-num="79"></td><td><pre>        <span class="token variable">$request</span><span class="token operator">-&gt;</span><span class="token class-name">setBizContent</span><span class="token punctuation">(</span><span class="token string">&#34;{&#34;</span> <span class="token operator">.</span></pre></td></tr><tr><td data-num="80"></td><td><pre>            <span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">out_biz_no</span><span class="token string">\&#34;</span><span class="token string">:</span><span class="token string">\&#34;</span><span class="token string">&#34;</span> <span class="token operator">.</span> <span class="token variable">$orderId</span> <span class="token operator">.</span> <span class="token string">&#34;</span><span class="token string">\&#34;</span><span class="token string">,&#34;</span> <span class="token operator">.</span></pre></td></tr><tr><td data-num="81"></td><td><pre>            <span class="token string">&#34;  }&#34;</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="82"></td><td><pre>        <span class="token comment">/*$request-&gt;setBizContent(&#34;{&#34; .</span></pre></td></tr><tr><td data-num="83"></td><td><pre><span class="token comment">            &#34;\&#34;out_biz_no\&#34;:\&#34;3142321423432\&#34;,&#34; .</span></pre></td></tr><tr><td data-num="84"></td><td><pre><span class="token comment">            &#34;\&#34;order_id\&#34;:\&#34;20160627110070001502260006780837\&#34;&#34; .</span></pre></td></tr><tr><td data-num="85"></td><td><pre><span class="token comment">            &#34;  }&#34;);*/</span></pre></td></tr><tr><td data-num="86"></td><td><pre>        <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token class-name">Aop</span><span class="token operator">-&gt;</span><span class="token class-name">execute</span><span class="token punctuation">(</span><span class="token variable">$request</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="87"></td><td><pre>        <span class="token variable">$responseNode</span> <span class="token operator">=</span> <span class="token class-name">str_replace</span><span class="token punctuation">(</span><span class="token string">&#34;.&#34;</span><span class="token punctuation">,</span> <span class="token string">&#34;_&#34;</span><span class="token punctuation">,</span> <span class="token variable">$request</span><span class="token operator">-&gt;</span><span class="token class-name">getApiMethodName</span><span class="token punctuation">())</span> <span class="token operator">.</span> <span class="token string">&#34;_response&#34;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="88"></td><td><pre>        <span class="token variable">$resultCode</span> <span class="token operator">=</span> <span class="token variable">$result</span><span class="token operator">-&gt;</span><span class="token variable">$responseNode</span><span class="token operator">-&gt;</span><span class="token class-name">code</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="89"></td><td><pre>        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">empty</span><span class="token punctuation">(</span><span class="token variable">$resultCode</span><span class="token punctuation">)</span><span class="token operator">&amp;&amp;</span><span class="token variable">$resultCode</span> <span class="token operator">==</span> <span class="token number">10000</span><span class="token punctuation">){</span></pre></td></tr><tr><td data-num="90"></td><td><pre>            <span class="token variable">$res_arr</span><span class="token punctuation">[</span><span class="token string">&#39;code&#39;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&#39;0&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="91"></td><td><pre>            <span class="token variable">$res_arr</span><span class="token punctuation">[</span><span class="token string">&#39;data&#39;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token variable">$result</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="92"></td><td><pre>        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="93"></td><td><pre>            <span class="token variable">$res_arr</span><span class="token punctuation">[</span><span class="token string">&#39;code&#39;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&#39;-1&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="94"></td><td><pre>        <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="95"></td><td><pre>        <span class="token keyword">return</span> <span class="token variable">$res_arr</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="96"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="97"></td><td><pre>    </pre></td></tr><tr><td data-num="98"></td><td><pre>    <span class="token comment">//保存日志 自行发挥</span></pre></td></tr><tr><td data-num="99"></td><td><pre>    <span class="token keyword">private</span> <span class="token keyword">function</span> <span class="token function">SaveLog</span><span class="token punctuation">()</span></pre></td></tr><tr><td data-num="100"></td><td><pre>    <span class="token punctuation">{</span></pre></td></tr><tr><td data-num="101"></td><td><pre>        </pre></td></tr><tr><td data-num="102"></td><td><pre>    <span class="token punctuation">}</span></pre></td></tr><tr><td data-num="103"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></table></figure>
+<div class="note warning"><p>请配合支付宝SDK食用</p>
+<p>云影只是集成了转账和查单功能</p></div>
+<p>附上官方SDK源码</p>
+<p><ins class="danger"><span class="exturl" data-url="aHR0cHM6Ly93d2EubGFuem91cy5jb20vaUh3Sk1sMDg4Y2o=">源码</span></ins></p>
+]]></description>
+    </item>
+    <item>
+      <title>一款简约的跳转页源码</title>
+      <link>https://blog.i286.com/article/c340ae76.html</link>
+      <guid>https://blog.i286.com/article/c340ae76.html</guid>
+      <pubDate>Fri, 29 Jan 2021 05:16:01 +0800</pubDate>
+      <description><![CDATA[<h1 id="演示效果图"><a class="anchor" href="#演示效果图">#</a> 演示效果图</h1>
+<p><img data-src="https://image.i286.com/images/tzurl.png" alt="演示"></p>
+<h1 id="源代码"><a class="anchor" href="#源代码">#</a> 源代码</h1>
+<figure class="highlight php"><figcaption data-lang="php"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;?</span><span class="token class-name">php</span> </pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">// | Quotes [ 没有目标的人生就是张拼图，反之则是蓝图]</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">// | Author: 云影 &lt;8711973@qq.com&gt;</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment">// | Date: 2018年8月26日</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token comment">// +----------------------------------------------------------------------</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token class-name">error_reporting</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token variable">$param</span> <span class="token operator">=</span> <span class="token variable">$_SERVER</span><span class="token punctuation">[</span><span class="token string">&#39;QUERY_STRING&#39;</span><span class="token punctuation">];</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment">?&gt;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>&lt;html&gt;&lt;head&gt;</pre></td></tr><tr><td data-num="15"></td><td><pre>&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34;&gt;</pre></td></tr><tr><td data-num="16"></td><td><pre>&lt;meta http-equiv=&#34;refresh&#34; content=&#34;1;url=&#39;&lt;?php echo $param;?&gt;&#39;;&#34;&gt;</pre></td></tr><tr><td data-num="17"></td><td><pre>&lt;title&gt;页面加载中,请稍候...&lt;/title&gt;</pre></td></tr><tr><td data-num="18"></td><td><pre>&lt;style type=&#34;text/css&#34;&gt;</pre></td></tr><tr><td data-num="19"></td><td><pre>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {</pre></td></tr><tr><td data-num="20"></td><td><pre>	margin: 0;</pre></td></tr><tr><td data-num="21"></td><td><pre>	padding: 0;</pre></td></tr><tr><td data-num="22"></td><td><pre>	border: 0;</pre></td></tr><tr><td data-num="23"></td><td><pre>	font-size: 100%;</pre></td></tr><tr><td data-num="24"></td><td><pre>	font: inherit;</pre></td></tr><tr><td data-num="25"></td><td><pre>	vertical-align: baseline</pre></td></tr><tr><td data-num="26"></td><td><pre>}</pre></td></tr><tr><td data-num="27"></td><td><pre></pre></td></tr><tr><td data-num="28"></td><td><pre>body {</pre></td></tr><tr><td data-num="29"></td><td><pre>	background: #3498db;</pre></td></tr><tr><td data-num="30"></td><td><pre>}</pre></td></tr><tr><td data-num="31"></td><td><pre></pre></td></tr><tr><td data-num="32"></td><td><pre>#loader-container {</pre></td></tr><tr><td data-num="33"></td><td><pre>	width: 188px;</pre></td></tr><tr><td data-num="34"></td><td><pre>	height: 188px;</pre></td></tr><tr><td data-num="35"></td><td><pre>	color: white;</pre></td></tr><tr><td data-num="36"></td><td><pre>	margin: 0 auto;</pre></td></tr><tr><td data-num="37"></td><td><pre>	position: absolute;</pre></td></tr><tr><td data-num="38"></td><td><pre>	top: 50%;</pre></td></tr><tr><td data-num="39"></td><td><pre>	left: 50%;</pre></td></tr><tr><td data-num="40"></td><td><pre>	margin-right: -50%;</pre></td></tr><tr><td data-num="41"></td><td><pre>	transform: translate(-50%, -50%);</pre></td></tr><tr><td data-num="42"></td><td><pre>	border: 5px solid #3498db;</pre></td></tr><tr><td data-num="43"></td><td><pre>	border-radius: 50%;</pre></td></tr><tr><td data-num="44"></td><td><pre>	-webkit-animation: borderScale 1s infinite ease-in-out;</pre></td></tr><tr><td data-num="45"></td><td><pre>	animation: borderScale 1s infinite ease-in-out;</pre></td></tr><tr><td data-num="46"></td><td><pre>}</pre></td></tr><tr><td data-num="47"></td><td><pre></pre></td></tr><tr><td data-num="48"></td><td><pre>#loadingText {</pre></td></tr><tr><td data-num="49"></td><td><pre>	font-family: &#39;Raleway&#39;, sans-serif;</pre></td></tr><tr><td data-num="50"></td><td><pre>	font-size: 1.4em;</pre></td></tr><tr><td data-num="51"></td><td><pre>	position: absolute;</pre></td></tr><tr><td data-num="52"></td><td><pre>	top: 50%;</pre></td></tr><tr><td data-num="53"></td><td><pre>	left: 50%;</pre></td></tr><tr><td data-num="54"></td><td><pre>	margin-right: -50%;</pre></td></tr><tr><td data-num="55"></td><td><pre>	transform: translate(-50%, -50%);</pre></td></tr><tr><td data-num="56"></td><td><pre>}</pre></td></tr><tr><td data-num="57"></td><td><pre></pre></td></tr><tr><td data-num="58"></td><td><pre>@-webkit-keyframes borderScale {</pre></td></tr><tr><td data-num="59"></td><td><pre>	0% {</pre></td></tr><tr><td data-num="60"></td><td><pre>		border: 5px solid white;</pre></td></tr><tr><td data-num="61"></td><td><pre>	}</pre></td></tr><tr><td data-num="62"></td><td><pre></pre></td></tr><tr><td data-num="63"></td><td><pre>	50% {</pre></td></tr><tr><td data-num="64"></td><td><pre>		border: 25px solid #3498db;</pre></td></tr><tr><td data-num="65"></td><td><pre>	}</pre></td></tr><tr><td data-num="66"></td><td><pre></pre></td></tr><tr><td data-num="67"></td><td><pre>	100% {</pre></td></tr><tr><td data-num="68"></td><td><pre>		border: 5px solid white;</pre></td></tr><tr><td data-num="69"></td><td><pre>	}</pre></td></tr><tr><td data-num="70"></td><td><pre>}</pre></td></tr><tr><td data-num="71"></td><td><pre></pre></td></tr><tr><td data-num="72"></td><td><pre>@keyframes borderScale {</pre></td></tr><tr><td data-num="73"></td><td><pre>	0% {</pre></td></tr><tr><td data-num="74"></td><td><pre>		border: 5px solid white;</pre></td></tr><tr><td data-num="75"></td><td><pre>	}</pre></td></tr><tr><td data-num="76"></td><td><pre></pre></td></tr><tr><td data-num="77"></td><td><pre>	50% {</pre></td></tr><tr><td data-num="78"></td><td><pre>		border: 25px solid #3498db;</pre></td></tr><tr><td data-num="79"></td><td><pre>	}</pre></td></tr><tr><td data-num="80"></td><td><pre></pre></td></tr><tr><td data-num="81"></td><td><pre>	100% {</pre></td></tr><tr><td data-num="82"></td><td><pre>		border: 5px solid white;</pre></td></tr><tr><td data-num="83"></td><td><pre>	}</pre></td></tr><tr><td data-num="84"></td><td><pre>}</pre></td></tr><tr><td data-num="85"></td><td><pre>&lt;/style&gt;</pre></td></tr><tr><td data-num="86"></td><td><pre>&lt;/head&gt;</pre></td></tr><tr><td data-num="87"></td><td><pre>&lt;body&gt;</pre></td></tr><tr><td data-num="88"></td><td><pre></pre></td></tr><tr><td data-num="89"></td><td><pre>&lt;div id=&#34;loader-container&#34;&gt;&lt;p id=&#34;loadingText&#34;&gt;页面加载中...&lt;/p&gt;&lt;/div&gt;</pre></td></tr><tr><td data-num="90"></td><td><pre></pre></td></tr><tr><td data-num="91"></td><td><pre></pre></td></tr><tr><td data-num="92"></td><td><pre>&lt;/body&gt;&lt;/html&gt;</pre></td></tr><tr><td data-num="93"></td><td><pre></pre></td></tr></table></figure>
+]]></description>
+    </item>
+    <item>
+      <title>一个好玩的音乐网站源码</title>
+      <link>https://blog.i286.com/article/2ce7aea0.html</link>
+      <guid>https://blog.i286.com/article/2ce7aea0.html</guid>
+      <pubDate>Fri, 29 Jan 2021 05:12:01 +0800</pubDate>
+      <description><![CDATA[<h1 id="导语"><a class="anchor" href="#导语">#</a> 导语</h1>
+<p>本程序基于TweenMax高性能动画框架编写，可以实现音乐律动跟随鼠标移动而变化</p>
+<h1 id="演示截图"><a class="anchor" href="#演示截图">#</a> 演示截图</h1>
+<p><img data-src="https://image.i286.com/images/music.png" alt="截图"></p>
+<p><img data-src="https://image.i286.com/images/music2.png" alt="截图"></p>
+<h1 id="源码说明"><a class="anchor" href="#源码说明">#</a> 源码说明</h1>
+<p>演示站：<span class="exturl" data-url="aHR0cDovL3BsYXkuaTI4Ni5jb20=">play.i286.com</span></p>
+<div class="note warning"><p>使用前建议先改版权，在<span class="label warning">index.html</span>文件里面</p></div>
+<p>一个很简单的网页，平时用来玩玩也是可以很快乐的!</p>
+<p>源码下载链接：<span class="exturl" data-url="aHR0cHM6Ly93d2EubGFuem91cy5jb20vaUlDdThsMDg3amE=">https://wwa.lanzous.com/iICu8l087ja</span></p>
+]]></description>
+    </item>
+    <item>
+      <title>申请当面付流程+配置教程</title>
+      <link>https://blog.i286.com/article/9dae51e0.html</link>
+      <guid>https://blog.i286.com/article/9dae51e0.html</guid>
+      <pubDate>Tue, 26 Jan 2021 13:26:02 +0800</pubDate>
+      <description><![CDATA[<h1 id="准备材料 &amp; 申请条件"><a class="anchor" href="#准备材料 &amp; 申请条件">#</a> 准备材料 &amp; 申请条件</h1>
+<ol>
+<li>支持的账户类型：经过实名认证的个人/企业支付宝账户</li>
+<li>签约申请提交资料：
+1） 经营场所照片
+  a. 有门头照的经营场所，需提供门头照；
+  b. 无门头照的经营场所，需提供内景照或场景照
+2） 同名的营业执照（即与支付宝账户认证名称一致）
+  a. 若签约时未提供同名营业执照，可申请“基础版”，商家收款有限额，可长期使用。
+  b. 若签约时提供了同名营业执照，或者签约后补充了同名营业执照，商家收款无限额。</li>
+</ol>
+<p><span class="label danger">根据相关要求，新签该产品的商家，在未满90日或连续交易未满30日期间，通过该产品收款的资金将于次日结算（T+1）。</span></p>
+<h1 id="申请步骤"><a class="anchor" href="#申请步骤">#</a> 申请步骤</h1>
+<p>申请地址 : <span class="exturl" data-url="aHR0cHM6Ly9iLmFsaXBheS5jb20vc2lnbmluZy9wcm9kdWN0RGV0YWlsVjIuaHRtP3Byb2R1Y3RJZD1JMTAxMTAwMDI5MDAwMDAwMTAwMw==">https://b.alipay.com/signing/productDetailV2.htm?productId=I1011000290000001003</span></p>
+<h3 id="特别提醒"><a class="anchor" href="#特别提醒">#</a> 特别提醒</h3>
+<ul>
+<li>经营内容，一般选零售，比如生活百货，水果店等（避免选互联网/金融等）。</li>
+<li>营业执照是非必填项，可以不上传（参考产品规则）。</li>
+<li>店铺招牌，可以利用搜索引擎或者大众点评。</li>
+<li>联系方式？（据说可以随便输入，建议输入真实的）。</li>
+<li>费率建议选择0.38（如果能改的话）。
+<div class="note warning"><p>遇到申请出错可以选择这个地址进入
+链接：<span class="exturl" data-url="aHR0cHM6Ly9iLmFsaXBheS5jb20vc2lnbmluZy9hdXRob3JpemVkUHJvZHVjdFNldC5odG0jLz9faz1mOTRpYWo=">https://b.alipay.com/signing/authorizedProductSet.htm</span></p></div></li>
+</ul>
+<p><img data-src="http://image.i286.com/images/dmf/step1.jpg" alt="演示">
+<img data-src="http://image.i286.com/images/dmf/setp2.jpg" alt="演示">
+<div class="note success"><p>提交成功后等待客服审核即可
+客服工作时间（9:00-19:00）</p></div>
+<img data-src="http://image.i286.com/images/dmf/setp3.jpg" alt="演示"></p>
+<h1 id="当面付优势"><a class="anchor" href="#当面付优势">#</a> 当面付优势</h1>
+<ol>
+<li>付款方式支持信用卡，花呗。</li>
+<li>付款后可获得积分。</li>
+<li>支持API接口对接收款</li>
+</ol>
+<h1 id="产品规则"><a class="anchor" href="#产品规则">#</a> 产品规则</h1>
+<ol>
+<li>签约时未提供同名营业执照（营业执照主体与支付宝账户认证主体同名），收款将会受到一定的限制，具体限制规则为交易限额：单笔收款≤1000，单日收款≤5W，不区分借记或贷记渠道。</li>
+<li>签约时提供了同名营业执照，或者签约后补充了同名营业执照，收款不受限额。您可以登录商家后台，进入我的产品，通过资质凭证补全来恢复正常的产品使用，点此进入我的产品。</li>
+</ol>
+<h1 id="支付宝公钥和私钥生成流程"><a class="anchor" href="#支付宝公钥和私钥生成流程">#</a> 支付宝公钥和私钥生成流程</h1>
+<p>请直接查看官方教程：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuZG9jcy5hbGlwYXkuY29tL29wZW4vMjkxLzEwNTk3MQ==">点我查看</span>
+<div class="note warning"><p>务必认真仔细看完教程</p></div></p>
+<h1 id="将当面付配置到网站里"><a class="anchor" href="#将当面付配置到网站里">#</a> 将当面付配置到网站里</h1>
+<p>  当我生成了公钥和私钥后，就可以把相应的信息填上去了
+<img data-src="http://image.i286.com/images/dmf/3.png" alt="演示"></p>
+<h1 id="常见问题"><a class="anchor" href="#常见问题">#</a> 常见问题</h1>
+<p>1.支付了不到账（请检查你的公钥和私钥是否正确，因为就算这两个填错了还是可以扫码支付的）</p>
+]]></description>
+    </item>
+    <item>
+      <title>关于Atom安装插件失败的解决方案</title>
+      <link>https://blog.i286.com/article/20671797.html</link>
+      <guid>https://blog.i286.com/article/20671797.html</guid>
+      <pubDate>Mon, 25 Jan 2021 20:31:41 +0800</pubDate>
+      <description><![CDATA[<h1 id="前言"><a class="anchor" href="#前言">#</a> 前言</h1>
+<p>  Atom的功能依赖于拓展，但是很多人在安装插件的时候会遇到安装失败，下载失败等问题。其实原因很简单，Atom的插件源全是国外的链接，部分运营商可能被墙了，因此，需要一定的步骤方可实现正常安装。</p>
+<h3 id="解决方法"><a class="anchor" href="#解决方法">#</a> 解决方法</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>方法1：</pre></td></tr><tr><td data-num="2"></td><td><pre>在 C:<span class="token string">\U</span>sers<span class="token string">\用</span>户名<span class="token string">\.</span>atom 目录下，新建文件名为 .apmrc 的文本文件 ，然后添加如下内容: </pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token variable">registry</span><span class="token operator">=</span>https://registry.npm.taobao.org/</pre></td></tr><tr><td data-num="4"></td><td><pre>strict-ssl<span class="token operator">=</span>false</pre></td></tr></table></figure>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>方法2：</pre></td></tr><tr><td data-num="2"></td><td><pre>添加文件后，发现安装插件还是报错，那是因为 apm 最终还是走的 npm 源，所以还需要更改 npm 源。</pre></td></tr><tr><td data-num="3"></td><td><pre>通过命令行：npm config <span class="token builtin">set</span> registry https://registry.npm.taobao.org 改成淘宝的源</pre></td></tr></table></figure>
+<p>最后通过 apm install --check
+如果出现
+Checking for native build tools done
+意味着可以顺利安装插件了！</p>
+]]></description>
+    </item>
+    <item>
+      <title>多个列表重组成字典[Python]</title>
+      <link>https://blog.i286.com/article/16be9022.html</link>
+      <guid>https://blog.i286.com/article/16be9022.html</guid>
+      <pubDate>Mon, 25 Jan 2021 20:24:02 +0800</pubDate>
+      <description><![CDATA[<h3 id="源代码"><a class="anchor" href="#源代码">#</a> 源代码</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># coding:utf-8</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token class-name">a</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token class-name">b</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&#39;a&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;b&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;c&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;d&#39;</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token class-name">c</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&#39;你&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;好&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;云&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;影&#39;</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token class-name">d</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&#39;人&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;生&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;苦&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;短&#39;</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token class-name">e</span> <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span><span class="token class-name">b</span><span class="token punctuation">,</span><span class="token class-name">c</span><span class="token punctuation">,</span><span class="token class-name">d</span><span class="token punctuation">))</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token class-name">f</span> <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span><span class="token class-name">a</span><span class="token punctuation">,</span><span class="token class-name">e</span><span class="token punctuation">))</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token builtin">print</span><span class="token punctuation">(</span><span class="token class-name">f</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment">#打印出</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment">#{1: (&#39;a&#39;, &#39;你&#39;, &#39;人&#39;), 2: (&#39;b&#39;, &#39;好&#39;, &#39;生&#39;), 3: (&#39;c&#39;, &#39;云&#39;, &#39;苦&#39;), 4: (&#39;d&#39;, &#39;影&#39;, &#39;短&#39;)}</span></pre></td></tr></table></figure>
+<p>调用的话就可以直接</p>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token builtin">print</span><span class="token punctuation">(</span><span class="token class-name">f</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">])</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">#打印出 (&#39;a&#39;,&#39;你&#39;,&#39;人&#39;)</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token builtin">print</span><span class="token punctuation">(</span><span class="token class-name">f</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">][</span><span class="token number">0</span><span class="token punctuation">])</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment">#打印出 a</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token builtin">print</span><span class="token punctuation">(</span><span class="token class-name">f</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">][</span><span class="token number">1</span><span class="token punctuation">])</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">#打印出 你</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">#类似的 不过要切记你的下标必须存在有元素，否则会报错</span></pre></td></tr></table></figure>
+<h3 id="二维字典示例"><a class="anchor" href="#二维字典示例">#</a> 二维字典示例</h3>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token class-name">a</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token class-name">b</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&#39;a&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;b&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;c&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;d&#39;</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token class-name">c</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&#39;你&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;好&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;云&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;影&#39;</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token class-name">d</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&#39;人&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;生&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;苦&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;短&#39;</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token class-name">e</span> <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span><span class="token class-name">c</span><span class="token punctuation">,</span><span class="token class-name">d</span><span class="token punctuation">))</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">#g = dict(zip(b,e))</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token class-name">f</span> <span class="token operator">=</span> <span class="token punctuation">{}</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">for</span> <span class="token class-name">r</span> <span class="token operator">in</span> <span class="token class-name">a</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token class-name">h</span> <span class="token operator">=</span> <span class="token punctuation">{}</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token class-name">h</span><span class="token punctuation">[</span><span class="token class-name">b</span><span class="token punctuation">[</span><span class="token class-name">r</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]]</span> <span class="token operator">=</span> <span class="token class-name">e</span><span class="token punctuation">[</span><span class="token class-name">r</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token class-name">f</span><span class="token punctuation">[</span><span class="token class-name">a</span><span class="token punctuation">[</span><span class="token class-name">r</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]]</span> <span class="token operator">=</span> <span class="token class-name">h</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token builtin">print</span><span class="token punctuation">(</span><span class="token class-name">f</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment">#打印出</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token comment">#{1: {&#39;a&#39;: (&#39;你&#39;, &#39;人&#39;)}, 2: {&#39;b&#39;: (&#39;好&#39;, &#39;生&#39;)}, 3: {&#39;c&#39;: (&#39;云&#39;, &#39;苦&#39;)}, 4: {&#39;d&#39;: (&#39;影&#39;, &#39;短&#39;)}}</span></pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token builtin">print</span><span class="token punctuation">(</span><span class="token class-name">f</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">])</span></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token comment">#打印出</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token comment">#{&#39;a&#39;: (&#39;你&#39;, &#39;人&#39;)}</span></pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token comment">#其余的都一样调用方法</span></pre></td></tr><tr><td data-num="20"></td><td><pre><span class="token comment">#三维字典可以自行研究，跟二维的差不多</span></pre></td></tr></table></figure>
+]]></description>
+    </item>
+    <item>
+      <title>求一个等式可填入的符号[php]</title>
+      <link>https://blog.i286.com/article/e5a13a45.html</link>
+      <guid>https://blog.i286.com/article/e5a13a45.html</guid>
+      <pubDate>Mon, 25 Jan 2021 10:46:00 +0800</pubDate>
+      <description><![CDATA[<h3 id="背景"><a class="anchor" href="#背景">#</a> 背景</h3>
+<p>  来源于一道小学数学题，实际做起来灰常的简单，但我还是想通过php代码来折腾一下</p>
+<h3 id="代码"><a class="anchor" href="#代码">#</a> 代码</h3>
+<figure class="highlight php"><figcaption data-lang="php"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;?</span><span class="token class-name">php</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">//计算 8()3()4=15()3()15 括号填写的符号且不重复</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token variable">$a</span> <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token variable">$b</span> <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token variable">$c</span> <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token variable">$d</span> <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token variable">$dd</span> <span class="token operator">=</span> <span class="token keyword">array</span><span class="token punctuation">(</span><span class="token string">&#39;+&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;-&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;*&#39;</span><span class="token punctuation">,</span><span class="token string">&#39;/&#39;</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">while</span><span class="token punctuation">(</span><span class="token keyword">true</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">{</span></pre></td></tr><tr><td data-num="10"></td><td><pre>	<span class="token variable">$tt</span> <span class="token operator">=</span> <span class="token punctuation">[];</span> <span class="token comment">//空数组</span></pre></td></tr><tr><td data-num="11"></td><td><pre>	<span class="token variable">$t1</span> <span class="token operator">=</span> <span class="token variable">$dd</span><span class="token punctuation">[</span><span class="token class-name">rand</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)];</span> </pre></td></tr><tr><td data-num="12"></td><td><pre>	<span class="token variable">$t2</span> <span class="token operator">=</span> <span class="token variable">$dd</span><span class="token punctuation">[</span><span class="token class-name">rand</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)];</span></pre></td></tr><tr><td data-num="13"></td><td><pre>	<span class="token variable">$t3</span> <span class="token operator">=</span> <span class="token variable">$dd</span><span class="token punctuation">[</span><span class="token class-name">rand</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)];</span></pre></td></tr><tr><td data-num="14"></td><td><pre>	<span class="token variable">$t4</span> <span class="token operator">=</span> <span class="token variable">$dd</span><span class="token punctuation">[</span><span class="token class-name">rand</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)];</span></pre></td></tr><tr><td data-num="15"></td><td><pre>	<span class="token class-name">array_push</span><span class="token punctuation">(</span><span class="token variable">$tt</span><span class="token punctuation">,</span><span class="token variable">$t1</span><span class="token punctuation">,</span><span class="token variable">$t2</span><span class="token punctuation">,</span><span class="token variable">$t3</span><span class="token punctuation">,</span><span class="token variable">$t4</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="16"></td><td><pre>	<span class="token comment">//判断是否有重复值</span></pre></td></tr><tr><td data-num="17"></td><td><pre>	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token class-name">count</span><span class="token punctuation">(</span><span class="token class-name">array_unique</span><span class="token punctuation">(</span><span class="token variable">$tt</span><span class="token punctuation">))</span> <span class="token operator">!=</span> <span class="token class-name">count</span><span class="token punctuation">(</span><span class="token variable">$tt</span><span class="token punctuation">))</span></pre></td></tr><tr><td data-num="18"></td><td><pre>	<span class="token punctuation">{</span></pre></td></tr><tr><td data-num="19"></td><td><pre>		<span class="token keyword">continue</span><span class="token punctuation">;</span> <span class="token comment">//继续循环</span></pre></td></tr><tr><td data-num="20"></td><td><pre>	<span class="token punctuation">}</span></pre></td></tr><tr><td data-num="21"></td><td><pre>	<span class="token comment">//左边</span></pre></td></tr><tr><td data-num="22"></td><td><pre>	<span class="token variable">$left</span> <span class="token operator">=</span> <span class="token string">&#34;8</span><span class="token string">{</span><span class="token variable">$t1</span><span class="token string">}</span><span class="token string">3</span><span class="token string">{</span><span class="token variable">$t2</span><span class="token string">}</span><span class="token string">4;&#34;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="23"></td><td><pre>	<span class="token variable">$left2</span> <span class="token operator">=</span> <span class="token keyword">eval</span><span class="token punctuation">(</span><span class="token string">&#34;return &#34;</span><span class="token operator">.</span><span class="token variable">$left</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="24"></td><td><pre>	<span class="token comment">//右边</span></pre></td></tr><tr><td data-num="25"></td><td><pre>	<span class="token variable">$right</span> <span class="token operator">=</span> <span class="token string">&#34;15</span><span class="token string">{</span><span class="token variable">$t3</span><span class="token string">}</span><span class="token string">3</span><span class="token string">{</span><span class="token variable">$t4</span><span class="token string">}</span><span class="token string">15;&#34;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>	<span class="token variable">$right2</span> <span class="token operator">=</span> <span class="token keyword">eval</span><span class="token punctuation">(</span><span class="token string">&#34;return &#34;</span><span class="token operator">.</span><span class="token variable">$right</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="27"></td><td><pre>	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$left2</span> <span class="token operator">==</span> <span class="token variable">$right2</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="28"></td><td><pre>	<span class="token punctuation">{</span></pre></td></tr><tr><td data-num="29"></td><td><pre>		<span class="token keyword">echo</span> <span class="token variable">$left2</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="30"></td><td><pre>		<span class="token keyword">echo</span> <span class="token string">&#39;&lt;br/&gt;&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="31"></td><td><pre>		<span class="token keyword">echo</span> <span class="token variable">$right2</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="32"></td><td><pre>		<span class="token keyword">echo</span> <span class="token string">&#39;&lt;br/&gt;&#39;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="33"></td><td><pre>		<span class="token keyword">echo</span> <span class="token class-name">trim</span><span class="token punctuation">(</span><span class="token variable">$left</span><span class="token punctuation">,</span><span class="token string">&#39;;&#39;</span><span class="token punctuation">)</span><span class="token operator">.</span><span class="token string">&#39;=&#39;</span><span class="token operator">.</span><span class="token class-name">trim</span><span class="token punctuation">(</span><span class="token variable">$right</span><span class="token punctuation">,</span><span class="token string">&#39;;&#39;</span><span class="token punctuation">);</span></pre></td></tr><tr><td data-num="34"></td><td><pre>		<span class="token keyword">break</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="35"></td><td><pre>	<span class="token punctuation">}</span></pre></td></tr><tr><td data-num="36"></td><td><pre><span class="token punctuation">}</span></pre></td></tr></table></figure>
+<p>如果有更好的方法，还望朋友您不吝赐教！</p>
+]]></description>
+    </item>
+    <item>
+      <title>炫酷的点击粒子爆炸特效</title>
+      <link>https://blog.i286.com/article/dce9b0d5.html</link>
+      <guid>https://blog.i286.com/article/dce9b0d5.html</guid>
+      <pubDate>Sun, 24 Jan 2021 12:47:00 +0800</pubDate>
+      <description><![CDATA[<h2 id="效果图"><a class="anchor" href="#效果图">#</a> 效果图</h2>
+<p><img data-src="/images/pasted-0.png" alt="效果图">  
+怎么样？你是否也想给你的网站加上这个特效呢？</p>
+<h2 id="代码"><a class="anchor" href="#代码">#</a> 代码</h2>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span><span class="token class-name">canvas</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&#34;fireworks&#34;</span> <span class="token class-name">style</span><span class="token operator">=</span><span class="token string">&#34;position:fixed;left:0;top:0;z-index:1;pointer-events:none&#34;</span><span class="token operator">&gt;&lt;</span>/canvas&gt;</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token operator">&lt;</span><span class="token class-name">script</span> <span class="token class-name">src</span><span class="token operator">=</span><span class="token string">&#34;/js/anime.min.js&#34;</span><span class="token operator">&gt;&lt;</span>/script&gt;</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token operator">&lt;</span><span class="token class-name">script</span> <span class="token class-name">src</span><span class="token operator">=</span><span class="token string">&#34;/js/fireworks.js&#34;</span><span class="token operator">&gt;&lt;</span>/script&gt;</pre></td></tr></table></figure>
+<p>至于anime.min.js和firworks.js 可以直接在本页下载（<span class="label danger">右键就好了</span>)</p>
+]]></description>
+    </item>
+    <item>
+      <title>我的第一篇hexo博客</title>
+      <link>https://blog.i286.com/article/de39a815.html</link>
+      <guid>https://blog.i286.com/article/de39a815.html</guid>
+      <pubDate>Sun, 24 Jan 2021 01:21:00 +0800</pubDate>
+      <description><![CDATA[<h1 id="导语"><a class="anchor" href="#导语">#</a> 导语</h1>
+<p>  别来无恙啊，我的老朋友。由于<span class="exturl" data-url="aHR0cDovL2llZmFyLmNu">iefar.cn</span>这个域名已被其他人买了，导致原来由emlog驱动的博客停用<span class="label danger">资源文件都丢失，改起来很麻烦</span>，所以不得不更换一个新的博客<span class="label danger">正好我也想换了</span>，于是乎就有了这个基于Hexo驱动搭建的博客。<br>
+  本博客已托管在github
+<div class="note success"><p>我还是你们熟悉的老云影</p></div></p>
+]]></description>
+    </item>
+  </channel>
+</rss>
